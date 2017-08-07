@@ -16,13 +16,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   var tintColor: NSColor?
   
-  func applicationDidFinishLaunching(aNotification: NSNotification) {
+  func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
 
-    self.vibrancyView.material = .Dark
+    self.vibrancyView.material = .dark
   }
 
-  func applicationWillTerminate(aNotification: NSNotification) {
+  func applicationWillTerminate(_ aNotification: Notification) {
     // Insert code here to tear down your application
   }
   
@@ -33,27 +33,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       // Tint the visual effect view
       for sublayer: CALayer in self.vibrancyView.layer!.sublayers! {
         if sublayer.name == "ClearCopyLayer" {
-          sublayer.backgroundColor = color.CGColor
+          sublayer.backgroundColor = color.cgColor
           break
         }
       }
     }
   }
  
-  @IBAction func tintDark(sender: NSButton) {
-    self.vibrancyView.material = .Dark
+  @IBAction func tintDark(_ sender: NSButton) {
+    self.vibrancyView.material = .dark
     applyTint()
   }
-  @IBAction func tintLight(sender: NSButton) {
-    self.vibrancyView.material = .Light
+  @IBAction func tintLight(_ sender: NSButton) {
+    self.vibrancyView.material = .light
     applyTint()
   }
   
-  @IBAction func tintRed(sender: NSButton) {
+  @IBAction func tintRed(_ sender: NSButton) {
     self.tintColor = NSColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.1)
     applyTint()
   }
-  @IBAction func tintBlue(sender: NSButton) {
+  @IBAction func tintBlue(_ sender: NSButton) {
     self.tintColor = NSColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 0.1)
     applyTint()
   }

@@ -90,6 +90,7 @@
 				TargetAttributes = {
 					B51176B91BE0E3C8000E5662 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -235,6 +236,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.syncfactory.Tinted-Visual-Effect-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -247,6 +249,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.syncfactory.Tinted-Visual-Effect-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -269,6 +272,7 @@
 				B51176C91BE0E3C8000E5662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
